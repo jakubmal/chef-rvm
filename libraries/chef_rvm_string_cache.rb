@@ -74,6 +74,7 @@ class Chef
         stdin.puts(cmd)
         stdin.close
 
+        puts "abc"
         puts "whaaaaaaaaaaaaaaaaaat #{stdout.read}"
 
         result = stdout.read.split('\n').first.chomp
