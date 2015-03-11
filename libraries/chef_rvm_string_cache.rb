@@ -75,7 +75,7 @@ class Chef
         stdin.close
 
         puts "abc"
-        puts "whaaaaaaaaaaaaaaaaaat #{stdout.read}"
+        puts "whaaaaaaaaaaaaaaaaaat #{cmd}"
 
         result = stdout.read.split('\n').first.chomp
         if result =~ /^-/   # if the result has a leading dash, value is bogus
